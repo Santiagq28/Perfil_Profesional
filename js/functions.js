@@ -85,3 +85,94 @@ Swal.fire({
     html: respuesta,
     background: '#fff'
 });
+
+//Operadores lógicos y estructuras condicionales (inverse, incremento y decremento)
+// AND && con if
+var bool    = false;
+var numeric = 5;
+if(!bool && numeric == 5){ // bool == true
+    console.log("ingresa if: "+bool);
+
+}
+else{
+    console.log("ingresa else: "+bool);
+}
+
+
+// Or || con if
+var age = 31;
+if(age == 31 || numeric == "5"){
+    console.log("ingresa if: "+bool);
+    age++;
+
+}
+else{
+    console.log("ingresa else: "+bool);
+}
+console.log(age);
+
+console.log("");
+console.log("FOR");
+//For
+console.log(array_text.length);
+for(let i=0; i<array_text.length; i++){
+    console.log(array_text[i] + (i+1));
+}
+console.log("");
+console.log("WHILE");
+
+// While
+let j=0;
+while(j<array_text.length){
+    console.log(array_text[j] + (j+1));
+    j++
+}
+console.log("");
+console.log("DO WHILE");
+//Do While
+let w =0;
+do{
+    console.log(array_text[w]);
+    w++;
+}
+while(w<array_text.length)
+
+//CREAR FUNCIONES
+function load_page(){
+    //alert("BIENVENIDO A MI SITIO WEB")
+}
+var color = "#fff";
+function change_color(){
+    document.body.style.backgroundColor= "red";
+    document.body.style.color= color;
+}
+
+const btn_clear = document.querySelector("#limpiar");
+btn_clear.addEventListener("click", () => {
+    document.body.style.backgroundColor= "white";
+    document.body.style.color= "#000";
+});
+
+// FORMULARIO DE REGISTRO
+const form_register = document.getElementById("form_register");
+const nombres = document.getElementById("nombres");
+const apellidos = document.getElementById("apellidos");
+const validation = document.getElementById("validation");
+
+form_register.addEventListener("submit", event_name => {
+    event_name.preventDefault();
+    let info = "";
+    if(nombres.value.length <= 2 || apellidos.value.length){
+        info += "Nombres y/o Apellidos deben ser mayores a 2 letras";
+        validation.style.color = "red";
+    }
+    else{
+        alert(nombres + " " + apellidos);
+        nombres.style.backgroundColor = "green";
+        apellidos.style.backgroundColor = "green";
+    }
+    validation.innerText = info;
+}
+
+)
+

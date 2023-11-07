@@ -140,6 +140,11 @@ while(w<array_text.length)
 //CREAR FUNCIONES
 function load_page(){
     //alert("BIENVENIDO A MI SITIO WEB")
+    document.getElementById("nombres").focus();
+    document.getElementById("apellidos").disabled=true;
+    let date = new Date();
+    console.log(date.getMonth()+1);
+    console.log(date.getSeconds());
 }
 var color = "#fff";
 function change_color(){
@@ -152,6 +157,21 @@ btn_clear.addEventListener("click", () => {
     document.body.style.backgroundColor= "white";
     document.body.style.color= "#000";
 });
+
+function validate(){
+    //alert("FUNCIONA");
+    let nombres = document.getElementById("nombres").value; //Lo último es un atributo, puede ser .id, etc
+    console.log(nombres);
+    console.log(nombres.length);
+    if(nombres.length > 2){
+        document.getElementById("apellidos").disabled=false;
+        document.getElementById("apellidos").focus();
+        alert(nombres.concat(" Duarte"));
+    };
+}
+function limpiar(){
+    let nombres = document.getElementById("nombres").value;
+}
 
 // FORMULARIO DE REGISTRO
 const form_register = document.getElementById("form_register");
@@ -173,6 +193,7 @@ form_register.addEventListener("submit", event_name => {
     }
     validation.innerText = info;
 }
+
 
 )
 

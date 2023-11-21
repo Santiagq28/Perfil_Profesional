@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form id="form_val" autocomplete="off">
+        <input type="text" id="nombres" required>
+        <input type="submit" value="Enviar">
+    </form>
+</body>
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.5/jquery.validate.min.js"></script>
+<script>
+    $(document).ready(function(){
+        $("#form_val").validate({
+            rules:{
+                nombres: {required:true, minlength:5}
+            },
+            messages:{
+                required: "El campo es requerido",
+                minlength: "Mínimo 5 datos"
+            }
+        });
+    })
+</script>
+</html>

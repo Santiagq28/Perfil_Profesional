@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tablas</title>
+</head>
+<body>
+    <form onsubmit="cargar()">
+        <label>¿Los datos de quien desea conocer?</label><br>
+        <label>1.Santiago 2.Charis 3.Andrea</label><br>
+        <input type="text" id="number" size="35">
+    </form><br>
+    <table border="1">
+        <tr>
+            <td>Nombres</td>
+            <td>Apellidos</td>
+            <td>Edad</td>
+        </tr>
+        <tbody id="tbody"></tbody>
+    </table>
+</body>
+<script>
+    array = [
+    {name: "Santiago", last_name: "Guevara", age: 17},
+    {name: "Charis", last_name: "Conrado", age: 18},
+    {name: "Andrea", last_name: "Uribe", age: 17},
+    ]
+
+    var a = Number(document.getElementById("number").value);
+    function cargar(){let info;
+        for(a=0;a<array.length;a++){
+            
+            console.log("Nombre: "+ array[a].name+ "  Apellido: "+ array[a].last_name+ "  Edad: "+ array[a].age);
+            info += "<tr><td>Nombre: "+ array[a].name+ "</td>"+ "<td>Apellido: "+ array[a].last_name+ "</td>"+ "<td>Edad: "+ array[a].age+ "</td></tr>";
+        }
+        document.getElementById("tbody").innerHTML = info;
+
+    }
+    
+    
+
+
+</script>
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practica</title>
+    <style>
+        *{
+            position: relative;
+        }
+        form{
+            background-color: palevioletred;
+            display: grid;
+            align-items: center;
+            justify-content: center;
+            width: 400px;
+            height: 300px;
+            place-items: center;
+            margin: 100px 300px;
+            border-radius: 10px;
+        }
+        table{
+            width: 400px;
+            height: 200px;
+            align-items: center;
+            place-items: center;
+            justify-content: center;
+            margin-left: 300px;
+        }
+    </style>
+</head>
+<body onload="load_page()">
+    <form id="form">
+        <label for="one">¿Qué dato desea conocer?</label>
+        <input type="text" id="one">
+        <label for="resp" id="resp">1.Nombres  2.Apellidos  3.Edad</label>
+        <button type="button" onclick="suma()">Conocer</button>
+    </form>
+    <form id="form2">
+        <label for="two">¿Qué segundo se encuentra desde que inició la página?</label>
+        <label for="resp" id="resp"></label>
+        <button type="button">Conocer</button>
+    </form>
+
+    <table border="1" classname="table">
+        <tr>
+            <td>Nombres</td>
+            <td>Apellidos</td>
+            <td>Edad</td>
+        </tr>
+        <tr>
+            <td id="1"></td>
+            <td id="2"></td>
+            <td id="3"></td>
+        </tr>
+        <tr>
+            <td id="12"></td>
+            <td id="22"></td>
+            <td id="32"></td>
+        </tr>
+        <tr>
+            <td id="122"></td>
+            <td id="222"></td>
+            <td id="322"></td>
+        </tr>
+    </table>
+
+    <br><br>
+    <table border="1">
+        <tr>
+            <td>Nombre</td>
+            <td>Apellido</td>
+            <td>Edad</td>
+        </tr>
+        <tbody id="print_zone"></tbody>
+    </table>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script src="../js/pr1.js"></script>
+
+</html>

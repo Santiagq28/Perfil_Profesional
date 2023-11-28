@@ -161,8 +161,10 @@ body{
 /* options */
 
 .options{
-    background-color: #e5e5f7;
-    background-image: linear-gradient(#444cf7 0.5px, transparente 0.5px), radial-gradient(#444cf7 0.5px, #e5e5f7 0.5px);
+    background-image: linear-gradient(180deg, #ffbaff 0, #f7acff 25%, #d59df2 50%, #b58eda 75%, #997fc4 100%);
+    /* background-image: radial-gradient(circle at 85.36% -11.24%, #ffffcf 0, #ffffca 8.33%, #f8ffc5 16.67%, #eafec0 25%, #dafabc 33.33%, #c9f6b8 41.67%, #b5f2b5 50%, #a0edb4 58.33%, #8ae9b5 66.67%, #71e5b8 75%, #56e2bd 83.33%, #2fdec3 91.67%, #00dbcb 100%); */
+    background-color: #0307d659;
+    /* background-image: linear-gradient(#444cf7 0.5px, transparente 0.5px), radial-gradient(#444cf7 0.5px, #e5e5f7 0.5px); */
     background-size: cover;
     background-position: 0 0, 10px 10px;
     overflow: hidden;
@@ -187,6 +189,7 @@ body{
 .options_img{
     width: 100%;
     display: block;
+    background-color: #ffffffb9;
 }
 
 /* testimonys */
@@ -233,7 +236,7 @@ body{
 }
 
 .testimony_course{
-    background-color: royalblue;
+    background-color: rgb(86, 69, 182);
     color: #fff;
     display: inline-block;
     padding: 5px;
@@ -248,6 +251,8 @@ body{
 
 .questions{
     text-align: center;
+    background-image: linear-gradient(180deg, #ffbaff 0, #f7acff 25%, #d59df2 50%, #b58eda 75%, #997fc4 100%);
+    /* background-image: radial-gradient(circle at 85.36% -11.24%, #ffffcf 0, #ffffca 8.33%, #f8ffc5 16.67%, #eafec0 25%, #dafabc 33.33%, #c9f6b8 41.67%, #b5f2b5 50%, #a0edb4 58.33%, #8ae9b5 66.67%, #71e5b8 75%, #56e2bd 83.33%, #2fdec3 91.67%, #00dbcb 100%); */
     background-color: #e5e5f7;
 }
 
@@ -320,7 +325,7 @@ body{
 /* footer */
 
 .footer {
-    background-color: #1d293f;
+    background-color: #080f1b;
 }
 
 .footer_title{
